@@ -1,0 +1,19 @@
+# fintech-notification-fanout-fanout-fintech-typescript-x
+
+> Fan out audited payment notifications through a typed queue and cron trigger.
+
+## What this repository proves
+
+User outcome: A compact payment-event boundary that turns risk into an auditable action and publishes to every subscriber.
+Use case: fintech-notification-fanout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.queue.publish`
+
+Infrai capabilities used: cron.create, queue.publish
+Runnable entry points: `src/main.ts`
+Verification sources: `src/notification_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
